@@ -3,17 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Minimalist Portfolio</title>
-	<!-- Normalize css is here -->
-	<!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-
-	<!-- Own css is here -->
+	<title>Minimalist-portfolio || Manage</title>
 	<!-- <link rel="stylesheet" href="./css/main.css"> -->
-
+	<link rel="stylesheet" href="./css/portfolio-manage.css">
 	<link rel="stylesheet" href="./css/css.min.css">
 </head>
 <body>
-
 	<!-- Start header -->
 	<header class="site-header">
 
@@ -47,62 +42,85 @@
 	</header>
 	<!-- Finish header -->
 
-	<!-- Begin site main -->
+	<!-- Site main begin -->
 	<main class="site-main">
-
-		<!-- Start hero section -->
-		<section class="hero">
+		<!-- Hero manage section start -->
+		<section class="hero-manage">
 			<div class="container">
-				<div class="hero-wrapper">
-					<div class="hero-wrapper-inner">
-						<div class="hero-title-wrapper">
-							<h1 class="hero-title" 
-							title="Hey, I’m Alex Spencer and I love building beautiful websites">
-								Hey, I’m Alex Spencer and I love building beautiful websites
-							</h1>
-							<a class="hero-link" href="#aboutme">
-								ABOUT ME
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Finish hero section -->
-
-		<!-- Abput me section start -->
-		<section class="about-me" id="aboutme">
-			<div class="container">
-				<div class="about-me-wrapper">
-					<img class="about-me-pic" 
-					src="./images/aboutmeimage.png" 
-					alt="This is about me images. As you can see in this image man"
-					width="540"
-					height="600"
-					srcset="./images/aboutmeimage.png 1x, ./images/aboutmeimage@2x.png 2x"
-					loading="lazy">
-					<div class="about-wrapper">
-						<h2 class="about-title" title="About Me">
-							About Me
+				<img class="hero-manage-pic" 
+				src="./images/manageheroimage.png" 
+				alt="This is manage hero image"
+				width="1150"
+				height="500"
+				srcset="./images/manageheroimage.png 1x, ./images/manageheroimage@2x.png 2x">
+				<div class="manage-wrapper">
+					<div class="manage-inner">
+						<h2 class="manage-title" title="Manage">
+							Manage
 						</h2>
-						<p class="about-desc">
-							I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
+						<p class="manage-desc">
+							This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.
 						</p>
-						<a class="about-link general-link" href="./portfolio.html">
-							GO TO PORTFOLIO
+						<p class="manage-text">
+							<strong class="manage-strong">
+								Interaction Design / Front End Development
+							</strong>
+						</p>
+						<p class="manage-text">
+							<strong class="manage-strong">
+								HTML / CSS / JS
+							</strong>
+						</p>
+						<a class="portfolio-link general-link" href="./portfolio-manage.html">
+							VIEW PROJECT
 						</a>
 					</div>
+					<div class="manage-wrapper-inner">
+						<h3 class="manage-project-title" title="Project Background">
+							Project Background
+						</h3>
+						<p class="manage-project-desc">
+							This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.
+						</p>
+						<h3 class="manage-project-title" title="Project Background">
+							Static Previews
+						</h3>
+						<img class="previews-pic" 
+						src="./images/previewsimage.png" 
+						alt="This is previews image. You can take all information here"
+						width="635"
+						height="832"
+						srcset="./images/previewsimage.png 1x, ./images/previewsimage@2x.png 2x"
+						loading="lazy">
+					</div>
 				</div>
 			</div>
 		</section>
-		<!-- About me section finish -->
+		<!-- Hero manage section finish -->
+
+		<!-- Slider section start -->
+		<section class="slider-section">
+			<div class="container">
+				<div class="slider-section-wrapper">
+					<h2 class="visually-hidden">Page slider</h2>
+					<a class="slider-section-link next-left-link" href="./portfolio-fylo.html">
+						<h3 class="slider-title">Fylo</h3>
+						<p class="slider-desc">Previous Project</p>
+					</a>
+					<a class="slider-section-link slider-right-link" href="./portfolio-bookmark.html">
+						<h3 class="slider-title">Bookmark</h3>
+						<p class="slider-desc">Previous Project</p>
+					</a>
+				</div>
+			</div>
+		</section>
 
 		<!-- Contact me section start -->
-		 <section class="contact-me">
+		<section class="contact-me">
 			<div class="container">
 				<div class="contact-me-wrapper">
 					<div class="contact-title-wrapper">
-						<h2 class="contact-me-title" 
+						<h2 class="contact-me-title"
 						title="Interested in doing a project together?">
 							Interested in doing a project together?
 						</h2>
@@ -114,11 +132,10 @@
 			</div>
 		 </section>
 		 <!-- Contact me section finish -->
-
 	</main>
-	<!-- End site main -->
+	<!-- Site main end -->
 
-	<!-- Site footer start -->
+	 <!-- Site footer start -->
 	<footer class="site-footer">
 		
 		<div class="container">
@@ -187,9 +204,5 @@
 
 	</footer>
 	<!-- Site footer finish -->
-
-	<!-- JavaScript link is here -->
-	<script src="./main.js"></script>
-
 </body>
 </html>

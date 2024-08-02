@@ -1,0 +1,59 @@
+.portfolio-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding-block: 40px 150px;
+}
+
+.portfolio-wrapper:nth-child(2n) {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
+	margin-left: 125px;
+}
+
+.portfolio-inner {
+	position: relative;
+	width: 350px;
+	padding-block: 103px;
+}
+
+.portfolio-inner::before {
+	position: absolute;
+	top: 0;
+	content: "";
+	width: 350px;
+	height: 1px;
+	background-color: #33323d;
+	opacity: 0.15;
+}
+
+.portfolio-inner::after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	content: "";
+	width: 350px;
+	height: 1px;
+	background-color: #33323d;
+	opacity: 0.15;
+}
+
+.portfolio-title {
+	margin-block: 0 28px;
+	font-family: "Ibarra Real Nova", "Times New Roman", serif;
+	font-size: 40px;
+	color: #33323d;
+	line-height: 42px;
+	letter-spacing: -0.357px;
+}
+
+.portfolio-desc {
+	margin-block: 0 24px;
+	color: #33323d;
+	line-height: 30px;
+}
